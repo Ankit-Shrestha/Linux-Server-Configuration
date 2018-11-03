@@ -150,6 +150,12 @@ save and exit. Run the database_setup and populate the database:
 
 ``sudo service apache2 restart``
 
+**17.Third Party API**
+
+- Used Google API for user authentication. Credentials and origins can be configured at https://console.developers.google.com/apis/.
+Planning on adding user authentication for future project. 
+
+
 
 
 
