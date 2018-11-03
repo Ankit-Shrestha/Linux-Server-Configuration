@@ -9,8 +9,8 @@ Knowledge of Linux, Database using PostgreSQL, Amazon lightsail service, A worki
 
 ---
 # Address, IP, and SSH Port
-**Project: ec2-35-183-99-138.ca-central-1.compute.amazonaws.com** <br />
-**Public IP Address:** 35.183.99.138 <br/ >
+**Project: http://ec2-35-183-99-138.ca-central-1.compute.amazonaws.com** <br />
+**Public IP Address:** 35.183.99.138 <br />
 **SSH Port:** 2200
 
 ---
@@ -110,7 +110,7 @@ Now, in the python files for the application, engine should be modified to
 - ``sudo pip install Flask``
 - ``sudo pip install httplib2 oauth2client sqlalchemy psycopg2 sqlalchemy_utils``
 - ``sudo pip install requests``
-make sure to get the correct dependencies and packages based on the version of python that you are using. Please refer the link https://packages.ubuntu.com/) .
+make sure to get the correct dependencies and packages based on the version of python that you are using. Please refer the link https://packages.ubuntu.com/ .
 
 **14. Clone the app from Github.**
 
