@@ -9,8 +9,8 @@ Knowledge of Linux, Database using PostgreSQL, Amazon lightsail service, A worki
 
 ---
 # Address, IP, and SSH Port
-**Project: [RestaurantMenu](ec2-35-183-99-138.ca-central-1.compute.amazonaws.com)**
-**Public IP Address:** 35.183.99.138
+**Project: ec2-35-183-99-138.ca-central-1.compute.amazonaws.com** <br />
+**Public IP Address:** 35.183.99.138 <br/ >
 **SSH Port:** 2200
 
 ---
@@ -18,7 +18,7 @@ Knowledge of Linux, Database using PostgreSQL, Amazon lightsail service, A worki
 
 **Steps for Linux Server Configuration**
 ---
-**1. Create a Amazon lightsail account for hosting the application. [Link](https://aws.amazon.com/lightsail/)**
+**1. Create a Amazon lightsail account for hosting the application. https://aws.amazon.com/lightsail/**
 
 - Get the private key from the dashboard after successfully creating a amazon lightsail instance for key based authentication and save it to ~/.ssh folder where ~ is environment home directory. save the file as udacity_key.pem (free to choose a name).
 
@@ -42,7 +42,7 @@ Add ``grader ALL=(ALL:ALL) ALL`` in the file.
 ``sudo nano /etc/hosts``
 Add ``127.0.1.1 ip-XX-XX-XX-XX`` to the file.
 
-**4. Key-based authentication for user grader.**
+**4. Key-based authentication for user grader.** <br />
 The public key for the instance is in the server instance.  Access it through ``cat /.ssh/authorized_keys`` while logged in as root. Now, we have to copy the public key to the grader user so that we can access grader user using the private key we save earlier in our local computer.
 
 - Copy the public key to ``sudo nano /home/grader/.ssh/authorized_keys``. There wont be a ``.ssh`` folder for grader initially. so create the ``.ssh`` folder and ``sudo touch authorized_keys`` and ``sudo nano authorized_keys`` and copy the whole public key. Now, we can access grader user using the private key ``udacity_key.pem`` saved in our local computer.
@@ -82,7 +82,7 @@ The public key for the instance is in the server instance.  Access it through ``
 - ``sudo ufw allow ntp``
 - ``sudo ufw enable``
 
-**11. Install and configure Apache2, mod-wsgi **
+**11. Install and configure Apache2, mod-wsgi**
 
 
 - ``sudo apt-get install apache2 libapache2-mod-wsgi`` 
@@ -110,7 +110,7 @@ Now, in the python files for the application, engine should be modified to
 - ``sudo pip install Flask``
 - ``sudo pip install httplib2 oauth2client sqlalchemy psycopg2 sqlalchemy_utils``
 - ``sudo pip install requests``
-make sure to get the correct dependencies and packages based on the version of python that you are using. Please refer to [Link](https://packages.ubuntu.com/) .
+make sure to get the correct dependencies and packages based on the version of python that you are using. Please refer the link https://packages.ubuntu.com/) .
 
 **14. Clone the app from Github.**
 
